@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  /*width: 1440px;*/
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features {
+  padding: 171px 0;
+}
+
+.title {
+  margin: 0 auto 94px;
+  color: rgb(61, 79, 159);
+  font-weight: 500;
+  text-align: center;
+}
+
+.title>h2 {
+  margin: 0;
+  letter-spacing: .1em;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.title>p {
+  margin: 20px 0 0;
+  letter-spacing: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 67px;
+  margin: 0 0 92px;
+}
+
+.item {
+  width: 140px;
+  text-align: center;
+}
+
+.item>img {
+  vertical-align: top;
+  line-height: 69px;
+}
+
+.item>h3 {
+  color: rgb(64, 116, 248);
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 33px 0 34px;
+}
+
+.item>p {
+  color: rgb(173, 179, 203);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  height: 102px;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 111px;
+  justify-content: center;
+  text-align: center;
+}
+.buttons>p{
+  margin: 0;
+  letter-spacing: 0;
+}
+.buttons>.Read-more {
+  background: rgb(255, 215, 215);
+  color: rgb(212, 63, 63);
+  width: 113px;
+  height: 43px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.buttons>.Get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(210, 225, 255);
+  color: rgb(58, 121, 255);
+  width: 113px;
+  height: 43px;
+  font-size: 13px;
+  font-weight: 700;
+  
+}
