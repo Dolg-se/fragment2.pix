@@ -239,8 +239,8 @@ color: rgb(61, 79, 159);
 }
 
 .blog>.content>.illustrations {
-  height: 267px;
-  width: 407px;
+  min-height: 267px;
+  flex-basis: 407px;
   display: flex;
   gap: 13px 12px;
 
@@ -257,7 +257,7 @@ color: rgb(61, 79, 159);
 }
 
 .blog>.content>.illustrations>.item2 {
-  width: 126.84px;
+width: 126.84px;
 height: 126.58px;
 border-radius: 5px;
 box-shadow: 0px 15px 100px 0px rgb(229, 235, 248);
@@ -274,8 +274,9 @@ background: linear-gradient(13.50deg, rgba(53, 170, 255, 0.68) 11.615%,rgba(90, 
 }
 
 .blog>.content>.text {
-  height: 267px;
-  width: 408px;
+  min-height: 267px;
+  flex-basis: 408px;
+  flex-shrink: 2;
   text-align: left;
 }
 
@@ -288,8 +289,8 @@ background: linear-gradient(13.50deg, rgba(53, 170, 255, 0.68) 11.615%,rgba(90, 
   margin: 0 auto 35px 0;
 }
 .blog>.content>.text>p {
-  width: 408px;
-height: 116px;
+  max-width: 408px;
+min-height: 116px;
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
@@ -310,7 +311,12 @@ background: rgb(210, 225, 255);
 color: rgb(58, 121, 255);
 
 }
-@media screen and (max-width:958px) {
+@media screen and (max-width:1024px) {
+  .blog>.content {
+   /* justify-content: center; */
+  }
+}
+@media screen and (max-width:425px) {
   .blog>.content {
    /* justify-content: center; */
   }
